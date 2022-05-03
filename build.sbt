@@ -33,3 +33,5 @@ assemblyMergeStrategy in assembly := {
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
 }
+
+publishTo := Some(MavenCache("local-maven", file("maven-repo")))
